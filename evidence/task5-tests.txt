@@ -1,0 +1,105 @@
+
+[1m[96m───────────────────────────────────────────────────────[0m
+[1m[96m  Task 5 - Bedrock Knowledge Bases[0m
+[1m[96m───────────────────────────────────────────────────────[0m
+  [92m✓ PASS[0m [+5pts] RETURNS_KB_ID is set in environment (YVU9DSABLR)
+  [92m✓ PASS[0m [+0pts] Returns Knowledge Base is ACTIVE
+  [92m✓ PASS[0m [+0pts] Returns KB uses amazon.titan-embed-text-v2:0
+  [92m✓ PASS[0m [+0pts] Returns KB data source has a completed sync
+  [92m✓ PASS[0m [+5pts] SHIPPING_KB_ID is set in environment (7H9RZDRQJQ)
+  [92m✓ PASS[0m [+0pts] Shipping Knowledge Base is ACTIVE
+  [92m✓ PASS[0m [+0pts] Shipping KB uses amazon.titan-embed-text-v2:0
+  [92m✓ PASS[0m [+0pts] Shipping KB data source has a completed sync
+  [92m✓ PASS[0m [+5pts] WARRANTY_KB_ID is set in environment (TBZGLZ12SK)
+  [92m✓ PASS[0m [+0pts] Warranty Knowledge Base is ACTIVE
+  [92m✓ PASS[0m [+0pts] Warranty KB uses amazon.titan-embed-text-v2:0
+  [92m✓ PASS[0m [+0pts] Warranty KB data source has a completed sync
+  [92m✓ PASS[0m [+5pts] All three Knowledge Bases return passages for a policy question
+    [PARALLEL RETRIEVAL - START]  Spawning 3 sub-agents concurrently via ThreadPoolExecutor
+    ──────────────────────────────────────────────────────
+    +-- [SUB-AGENT 01]  ReturnsRetriever   KB-ID: YVU9DSABLR
+    +-- [SUB-AGENT 02]  ShippingRetriever  KB-ID: 7H9RZDRQJQ
+    +-- [SUB-AGENT 03]  WarrantyRetriever  KB-ID: TBZGLZ12SK
+    Retrieving in parallel... (sub-agent output suppressed - clean results printed sequentially after [END])
+
+Tool #1: retrieve_warranty_policy
+
+Tool #1: retrieve_shipping_policy
+
+Tool #2: retrieve_warranty_policy
+
+Tool #2: retrieve_shipping_policy
+I'll look up the return window for premium customers and warranty information in the Returns Policy.
+Tool #1: retrieve_returns_policy
+Based on the retrieved information from the Shipping Policy:
+
+**Premium Customer Return Window:** 60 days
+
+**Warranty for Premium Customers:** 3 years on electronics
+
+According to the NovaMart Customer Tier Program policy, Premium tier customers receive:
+- Extended 60-day return window (compared to 30 days for Standard customers)
+- 3-year warranty on electronics (compared to 1 year for Standard customers)
+
+**Source:** s3://udacity-agentcore-policy-docs-062966552587-ab401230/policies/shipping/customer_tiers.txtBased on the warranty policy documents, here's the information for premium customers:
+
+## Return Window for Premium Customers
+**60 days** - Premium tier customers receive an extended 60-day return window (compared to 30 days for standard customers).
+
+## Warranty Length for Premium Customers
+**3 years on electronics** - Premium tier customers receive an automatic 3-year warranty on all electronics (compared to the standard 2-year warranty on electronics for regular customers).
+
+**Sources:**
+- s3://udacity-agentcore-policy-docs-062966552587-ab401230/policies/warranty/customer_tiers.txt
+- s3://udacity-agentcore-policy-docs-062966552587-ab401230/policies/warranty/warranty_policy.txtBased on the Returns Policy, here's the information you requested:
+
+## Return Window for Premium Customers
+**60 days** - Premium tier customers receive an extended 60-day return window (compared to the standard 30-day window for regular customers).
+
+## Warranty
+The warranty length depends on your customer tier:
+- **Premium customers: 3-year warranty on electronics**
+- **Standard customers: 1-year warranty on electronics**
+
+**Source:** NovaMart Customer Tier Program (s3://udacity-agentcore-policy-docs-062966552587-ab401230/policies/returns/customer_tiers.txt)
+
+Note: The warranty information specifically mentions electronics. If you need warranty information for other product categories, that information was not found in the retrieved policy documents.    ──────────────────────────────────────────────────────
+    [PARALLEL RETRIEVAL - END]  All 3 KBs responded  Elapsed: 12.5s
+
+    [SUB-AGENT 01]  ReturnsRetriever   KB: YVU9DSABLR
+      | Based on the Returns Policy, here's the information you requested:
+      | ## Return Window for Premium Customers
+      | **60 days** - Premium tier customers receive an extended 60-day return window (compared to the standard 30-day window for regular customers).
+      | ## Warranty
+      | The warranty length depends on your customer tier:
+      | - **Premium customers: 3-year warranty on electronics**
+      | - **Standard customers: 1-year warranty on electronics**
+      | **Source:** NovaMart Customer Tier Program (s3://udacity-agentcore-policy-docs-062966552587-ab401230/policies/returns/customer_tiers.txt)
+      | Note: The warranty information specifically mentions electronics. If you need warranty information for other product categories, that information was not found in the retrieved policy documents.
+
+    [SUB-AGENT 02]  ShippingRetriever  KB: 7H9RZDRQJQ
+      | Based on the retrieved information from the Shipping Policy:
+      | **Premium Customer Return Window:** 60 days
+      | **Warranty for Premium Customers:** 3 years on electronics
+      | According to the NovaMart Customer Tier Program policy, Premium tier customers receive:
+      | - Extended 60-day return window (compared to 30 days for Standard customers)
+      | - 3-year warranty on electronics (compared to 1 year for Standard customers)
+      | **Source:** s3://udacity-agentcore-policy-docs-062966552587-ab401230/policies/shipping/customer_tiers.txt
+
+    [SUB-AGENT 03]  WarrantyRetriever  KB: TBZGLZ12SK
+      | Based on the warranty policy documents, here's the information for premium customers:
+      | ## Return Window for Premium Customers
+      | **60 days** - Premium tier customers receive an extended 60-day return window (compared to 30 days for standard customers).
+      | ## Warranty Length for Premium Customers
+      | **3 years on electronics** - Premium tier customers receive an automatic 3-year warranty on all electronics (compared to the standard 2-year warranty on electronics for regular customers).
+      | **Sources:**
+      | - s3://udacity-agentcore-policy-docs-062966552587-ab401230/policies/warranty/customer_tiers.txt
+      | - s3://udacity-agentcore-policy-docs-062966552587-ab401230/policies/warranty/warranty_policy.txt
+  [92m✓ PASS[0m [+5pts] search_all_policies() returned combined results from the three retrievers (12.5s)
+
+═══════════════════════════════════════════════════════
+  [1mScore: [92m25/25 pts (100%)[0m
+═══════════════════════════════════════════════════════
+
+  [92m[1m🎉 Perfect score! All tasks complete.[0m
+

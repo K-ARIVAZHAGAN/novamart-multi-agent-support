@@ -1,0 +1,556 @@
+{
+  "start": "2026-10-18 02:56:39.070319+00:00",
+  "end": "2026-10-18 05:56:39.070319+00:00",
+  "Services": [
+    {
+      "ReferenceId": 0,
+      "Name": "CommunicationAgent",
+      "Names": [
+        "CommunicationAgent"
+      ],
+      "Type": "remote",
+      "State": "passive",
+      "StartTime": "2026-10-18 11:23:46+05:30",
+      "EndTime": "2026-10-18 11:25:05+05:30",
+      "Edges": [],
+      "SummaryStatistics": {
+        "OkCount": 2,
+        "ErrorStatistics": {
+          "ThrottleCount": 0,
+          "OtherCount": 0,
+          "TotalCount": 0
+        },
+        "FaultStatistics": {
+          "OtherCount": 0,
+          "TotalCount": 0
+        },
+        "TotalCount": 2,
+        "TotalResponseTime": 20.325
+      },
+      "DurationHistogram": [
+        {
+          "Value": 9.72,
+          "Count": 1
+        },
+        {
+          "Value": 10.605,
+          "Count": 1
+        }
+      ],
+      "ResponseTimeHistogram": [
+        {
+          "Value": 9.72,
+          "Count": 1
+        },
+        {
+          "Value": 10.605,
+          "Count": 1
+        }
+      ]
+    },
+    {
+      "ReferenceId": 1,
+      "Name": "InventoryAgent",
+      "Names": [
+        "InventoryAgent"
+      ],
+      "Type": "remote",
+      "State": "passive",
+      "StartTime": "2026-10-18 11:25:04+05:30",
+      "EndTime": "2026-10-18 11:25:05+05:30",
+      "Edges": [],
+      "SummaryStatistics": {
+        "OkCount": 1,
+        "ErrorStatistics": {
+          "ThrottleCount": 0,
+          "OtherCount": 0,
+          "TotalCount": 0
+        },
+        "FaultStatistics": {
+          "OtherCount": 0,
+          "TotalCount": 0
+        },
+        "TotalCount": 1,
+        "TotalResponseTime": 12.662
+      },
+      "DurationHistogram": [
+        {
+          "Value": 12.662,
+          "Count": 1
+        }
+      ],
+      "ResponseTimeHistogram": [
+        {
+          "Value": 12.662,
+          "Count": 1
+        }
+      ]
+    },
+    {
+      "ReferenceId": 2,
+      "Name": "KnowledgeBase:returns",
+      "Names": [
+        "KnowledgeBase:returns"
+      ],
+      "Type": "remote",
+      "State": "passive",
+      "StartTime": "2026-10-18 11:23:46+05:30",
+      "EndTime": "2026-10-18 11:23:47+05:30",
+      "Edges": [],
+      "SummaryStatistics": {
+        "OkCount": 1,
+        "ErrorStatistics": {
+          "ThrottleCount": 0,
+          "OtherCount": 0,
+          "TotalCount": 0
+        },
+        "FaultStatistics": {
+          "OtherCount": 0,
+          "TotalCount": 0
+        },
+        "TotalCount": 1,
+        "TotalResponseTime": 0.454
+      },
+      "DurationHistogram": [
+        {
+          "Value": 0.454,
+          "Count": 1
+        }
+      ],
+      "ResponseTimeHistogram": [
+        {
+          "Value": 0.454,
+          "Count": 1
+        }
+      ]
+    },
+    {
+      "ReferenceId": 3,
+      "Name": "KnowledgeBase:shipping",
+      "Names": [
+        "KnowledgeBase:shipping"
+      ],
+      "Type": "remote",
+      "State": "passive",
+      "StartTime": "2026-10-18 11:23:46+05:30",
+      "EndTime": "2026-10-18 11:23:47+05:30",
+      "Edges": [],
+      "SummaryStatistics": {
+        "OkCount": 1,
+        "ErrorStatistics": {
+          "ThrottleCount": 0,
+          "OtherCount": 0,
+          "TotalCount": 0
+        },
+        "FaultStatistics": {
+          "OtherCount": 0,
+          "TotalCount": 0
+        },
+        "TotalCount": 1,
+        "TotalResponseTime": 0.394
+      },
+      "DurationHistogram": [
+        {
+          "Value": 0.394,
+          "Count": 1
+        }
+      ],
+      "ResponseTimeHistogram": [
+        {
+          "Value": 0.394,
+          "Count": 1
+        }
+      ]
+    },
+    {
+      "ReferenceId": 4,
+      "Name": "KnowledgeBase:warranty",
+      "Names": [
+        "KnowledgeBase:warranty"
+      ],
+      "Type": "remote",
+      "State": "passive",
+      "StartTime": "2026-10-18 11:23:46+05:30",
+      "EndTime": "2026-10-18 11:23:47+05:30",
+      "Edges": [],
+      "SummaryStatistics": {
+        "OkCount": 1,
+        "ErrorStatistics": {
+          "ThrottleCount": 0,
+          "OtherCount": 0,
+          "TotalCount": 0
+        },
+        "FaultStatistics": {
+          "OtherCount": 0,
+          "TotalCount": 0
+        },
+        "TotalCount": 1,
+        "TotalResponseTime": 0.494
+      },
+      "DurationHistogram": [
+        {
+          "Value": 0.494,
+          "Count": 1
+        }
+      ],
+      "ResponseTimeHistogram": [
+        {
+          "Value": 0.494,
+          "Count": 1
+        }
+      ]
+    },
+    {
+      "ReferenceId": 5,
+      "Name": "NovaMart-Orchestrator",
+      "Names": [
+        "NovaMart-Orchestrator"
+      ],
+      "Root": true,
+      "State": "active",
+      "StartTime": "2026-10-18 11:23:46+05:30",
+      "EndTime": "2026-10-18 11:25:05+05:30",
+      "Edges": [
+        {
+          "ReferenceId": 8,
+          "StartTime": "2026-10-18 11:23:46+05:30",
+          "EndTime": "2026-10-18 11:25:05+05:30",
+          "SummaryStatistics": {
+            "OkCount": 1,
+            "ErrorStatistics": {
+              "ThrottleCount": 0,
+              "OtherCount": 0,
+              "TotalCount": 0
+            },
+            "FaultStatistics": {
+              "OtherCount": 0,
+              "TotalCount": 0
+            },
+            "TotalCount": 1,
+            "TotalResponseTime": 10.684
+          },
+          "ResponseTimeHistogram": [
+            {
+              "Value": 10.684,
+              "Count": 1
+            }
+          ],
+          "Aliases": []
+        },
+        {
+          "ReferenceId": 1,
+          "StartTime": "2026-10-18 11:23:46+05:30",
+          "EndTime": "2026-10-18 11:25:05+05:30",
+          "SummaryStatistics": {
+            "OkCount": 1,
+            "ErrorStatistics": {
+              "ThrottleCount": 0,
+              "OtherCount": 0,
+              "TotalCount": 0
+            },
+            "FaultStatistics": {
+              "OtherCount": 0,
+              "TotalCount": 0
+            },
+            "TotalCount": 1,
+            "TotalResponseTime": 12.662
+          },
+          "ResponseTimeHistogram": [
+            {
+              "Value": 12.662,
+              "Count": 1
+            }
+          ],
+          "Aliases": []
+        },
+        {
+          "ReferenceId": 7,
+          "StartTime": "2026-10-18 11:23:46+05:30",
+          "EndTime": "2026-10-18 11:25:05+05:30",
+          "SummaryStatistics": {
+            "OkCount": 1,
+            "ErrorStatistics": {
+              "ThrottleCount": 0,
+              "OtherCount": 0,
+              "TotalCount": 0
+            },
+            "FaultStatistics": {
+              "OtherCount": 0,
+              "TotalCount": 0
+            },
+            "TotalCount": 1,
+            "TotalResponseTime": 17.141
+          },
+          "ResponseTimeHistogram": [
+            {
+              "Value": 17.141,
+              "Count": 1
+            }
+          ],
+          "Aliases": []
+        },
+        {
+          "ReferenceId": 0,
+          "StartTime": "2026-10-18 11:23:46+05:30",
+          "EndTime": "2026-10-18 11:25:05+05:30",
+          "SummaryStatistics": {
+            "OkCount": 2,
+            "ErrorStatistics": {
+              "ThrottleCount": 0,
+              "OtherCount": 0,
+              "TotalCount": 0
+            },
+            "FaultStatistics": {
+              "OtherCount": 0,
+              "TotalCount": 0
+            },
+            "TotalCount": 2,
+            "TotalResponseTime": 20.325
+          },
+          "ResponseTimeHistogram": [
+            {
+              "Value": 9.72,
+              "Count": 1
+            },
+            {
+              "Value": 10.605,
+              "Count": 1
+            }
+          ],
+          "Aliases": []
+        },
+        {
+          "ReferenceId": 3,
+          "StartTime": "2026-10-18 11:23:46+05:30",
+          "EndTime": "2026-10-18 11:25:05+05:30",
+          "SummaryStatistics": {
+            "OkCount": 1,
+            "ErrorStatistics": {
+              "ThrottleCount": 0,
+              "OtherCount": 0,
+              "TotalCount": 0
+            },
+            "FaultStatistics": {
+              "OtherCount": 0,
+              "TotalCount": 0
+            },
+            "TotalCount": 1,
+            "TotalResponseTime": 0.394
+          },
+          "ResponseTimeHistogram": [
+            {
+              "Value": 0.394,
+              "Count": 1
+            }
+          ],
+          "Aliases": []
+        },
+        {
+          "ReferenceId": 2,
+          "StartTime": "2026-10-18 11:23:46+05:30",
+          "EndTime": "2026-10-18 11:25:05+05:30",
+          "SummaryStatistics": {
+            "OkCount": 1,
+            "ErrorStatistics": {
+              "ThrottleCount": 0,
+              "OtherCount": 0,
+              "TotalCount": 0
+            },
+            "FaultStatistics": {
+              "OtherCount": 0,
+              "TotalCount": 0
+            },
+            "TotalCount": 1,
+            "TotalResponseTime": 0.454
+          },
+          "ResponseTimeHistogram": [
+            {
+              "Value": 0.454,
+              "Count": 1
+            }
+          ],
+          "Aliases": []
+        },
+        {
+          "ReferenceId": 4,
+          "StartTime": "2026-10-18 11:23:46+05:30",
+          "EndTime": "2026-10-18 11:25:05+05:30",
+          "SummaryStatistics": {
+            "OkCount": 1,
+            "ErrorStatistics": {
+              "ThrottleCount": 0,
+              "OtherCount": 0,
+              "TotalCount": 0
+            },
+            "FaultStatistics": {
+              "OtherCount": 0,
+              "TotalCount": 0
+            },
+            "TotalCount": 1,
+            "TotalResponseTime": 0.494
+          },
+          "ResponseTimeHistogram": [
+            {
+              "Value": 0.494,
+              "Count": 1
+            }
+          ],
+          "Aliases": []
+        }
+      ],
+      "SummaryStatistics": {
+        "OkCount": 2,
+        "ErrorStatistics": {
+          "ThrottleCount": 0,
+          "OtherCount": 0,
+          "TotalCount": 0
+        },
+        "FaultStatistics": {
+          "OtherCount": 0,
+          "TotalCount": 0
+        },
+        "TotalCount": 2,
+        "TotalResponseTime": 86.035
+      },
+      "DurationHistogram": [
+        {
+          "Value": 36.974,
+          "Count": 1
+        },
+        {
+          "Value": 49.061,
+          "Count": 1
+        }
+      ],
+      "ResponseTimeHistogram": [
+        {
+          "Value": 36.974,
+          "Count": 1
+        },
+        {
+          "Value": 49.061,
+          "Count": 1
+        }
+      ]
+    },
+    {
+      "ReferenceId": 6,
+      "Name": "NovaMart-Orchestrator",
+      "Names": [
+        "NovaMart-Orchestrator"
+      ],
+      "Type": "client",
+      "State": "unknown",
+      "StartTime": "2026-10-18 11:23:46+05:30",
+      "EndTime": "2026-10-18 11:25:05+05:30",
+      "Edges": [
+        {
+          "ReferenceId": 5,
+          "StartTime": "2026-10-18 11:23:46+05:30",
+          "EndTime": "2026-10-18 11:25:05+05:30",
+          "SummaryStatistics": {
+            "OkCount": 2,
+            "ErrorStatistics": {
+              "ThrottleCount": 0,
+              "OtherCount": 0,
+              "TotalCount": 0
+            },
+            "FaultStatistics": {
+              "OtherCount": 0,
+              "TotalCount": 0
+            },
+            "TotalCount": 2,
+            "TotalResponseTime": 86.035
+          },
+          "ResponseTimeHistogram": [
+            {
+              "Value": 36.974,
+              "Count": 1
+            },
+            {
+              "Value": 49.061,
+              "Count": 1
+            }
+          ],
+          "Aliases": []
+        }
+      ]
+    },
+    {
+      "ReferenceId": 7,
+      "Name": "PolicyAgent",
+      "Names": [
+        "PolicyAgent"
+      ],
+      "Type": "remote",
+      "State": "passive",
+      "StartTime": "2026-10-18 11:23:46+05:30",
+      "EndTime": "2026-10-18 11:23:47+05:30",
+      "Edges": [],
+      "SummaryStatistics": {
+        "OkCount": 1,
+        "ErrorStatistics": {
+          "ThrottleCount": 0,
+          "OtherCount": 0,
+          "TotalCount": 0
+        },
+        "FaultStatistics": {
+          "OtherCount": 0,
+          "TotalCount": 0
+        },
+        "TotalCount": 1,
+        "TotalResponseTime": 17.141
+      },
+      "DurationHistogram": [
+        {
+          "Value": 17.141,
+          "Count": 1
+        }
+      ],
+      "ResponseTimeHistogram": [
+        {
+          "Value": 17.141,
+          "Count": 1
+        }
+      ]
+    },
+    {
+      "ReferenceId": 8,
+      "Name": "RefundAgent",
+      "Names": [
+        "RefundAgent"
+      ],
+      "Type": "remote",
+      "State": "passive",
+      "StartTime": "2026-10-18 11:25:04+05:30",
+      "EndTime": "2026-10-18 11:25:05+05:30",
+      "Edges": [],
+      "SummaryStatistics": {
+        "OkCount": 1,
+        "ErrorStatistics": {
+          "ThrottleCount": 0,
+          "OtherCount": 0,
+          "TotalCount": 0
+        },
+        "FaultStatistics": {
+          "OtherCount": 0,
+          "TotalCount": 0
+        },
+        "TotalCount": 1,
+        "TotalResponseTime": 10.684
+      },
+      "DurationHistogram": [
+        {
+          "Value": 10.684,
+          "Count": 1
+        }
+      ],
+      "ResponseTimeHistogram": [
+        {
+          "Value": 10.684,
+          "Count": 1
+        }
+      ]
+    }
+  ]
+}

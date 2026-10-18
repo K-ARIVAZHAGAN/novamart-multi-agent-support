@@ -1,0 +1,33 @@
+Invoking arn:aws:bedrock-agentcore:us-east-1:062966552587:runtime/udacity_agentcore_runtime-mYvDajFMXg
+Session: 16b15b64 | Customer: CUST-001
+Query: What is the return policy for premium customers?
+
+Response: Thank you for your inquiry about our Premium customer return policy! I'm happy to share the details with you.
+
+## **Premium Return Policy Highlights**
+
+As a Premium customer, you enjoy an **extended 60-day return window** – that's double the standard 30-day period!
+
+### **How to Qualify for Premium Status**
+You automatically become Premium when you reach either:
+- **$500+ spent** in a calendar year, OR
+- **20+ orders placed** in a calendar year
+
+### **Easy Return Process**
+1. Log in to your account and go to Order History
+2. Select the item and click "Start Return"
+3. Choose your return reason
+4. Print your prepaid return shipping label (free!)
+5. Pack securely and drop off at any authorized carrier
+6. Receive your refund within 5-7 business days after we receive the return
+
+### **Your Other Premium Perks**
+Beyond the generous return window, you also get:
+- ✈️ Free expedited shipping on all orders
+- 🛡️ 3-year warranty on electronics (vs. standard 1-year)
+- 🎯 Priority customer support (4-hour response time)
+- 🌟 Early access to sales and new product launches
+- 👤 Dedicated account manager for orders over $500
+
+Is there a specific order you'd like to return, or do you have any other questions about the return process? I'm here to help!
+X-Ray trace: 1-6ad45eea-b6040aa1685cac0771665ded

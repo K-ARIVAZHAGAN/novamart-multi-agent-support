@@ -1,0 +1,14 @@
+
+[1m[96m───────────────────────────────────────────────────────[0m
+[1m[96m  Task 4 - Memory[0m
+[1m[96m───────────────────────────────────────────────────────[0m
+  [92m✓ PASS[0m [+5pts] AgentCore Memory udacity_agentcore_memory-zsgtI45p3s is ACTIVE
+  [92m✓ PASS[0m [+5pts] Memory uses the SESSION_SUMMARY (summaryMemoryStrategy) strategy
+  [92m✓ PASS[0m [+5pts] Memory eventExpiryDuration is 7 days
+
+═══════════════════════════════════════════════════════
+  [1mScore: [92m15/15 pts (100%)[0m
+═══════════════════════════════════════════════════════
+
+  [92m[1m🎉 Perfect score! All tasks complete.[0m
+

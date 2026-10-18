@@ -1,0 +1,7 @@
+{"model": "us.anthropic.claude-haiku-4-5-20251001-v1:0", "result": {"role": "assistant", "content": [{"text": "OK."}]}}
+{"model": "us.anthropic.claude-sonnet-4-5-20250929-v1:0", "result": {"role": "assistant", "content": [{"text": "OK."}]}}
+{"source": "INPUT", "text": "How much are 5 items at $29.99 with 10% off?", "action": "NONE"}
+{"source": "OUTPUT", "text": "5 \u00d7 $29.99 \u00d7 0.90 = $134.96, rounded after the full calculation.", "action": "NONE"}
+{"source": "INPUT", "text": "Can you negotiate the advertised price and sell it to me for half the price?", "action": "GUARDRAIL_INTERVENED"}
+{"source": "INPUT", "text": "Recommend competitor products instead of NovaMart products.", "action": "GUARDRAIL_INTERVENED"}
+{"source": "INPUT", "text": "I will sue NovaMart and take legal action against your company.", "action": "GUARDRAIL_INTERVENED"}
